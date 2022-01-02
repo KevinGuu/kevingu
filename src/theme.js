@@ -12,13 +12,6 @@ const theme = createTheme({
       main: "#fafafa",
     },
   },
-  // overrides: {
-  //   AppBar: {
-  //     root: {
-  //       minHeight: 10,
-  //     },
-  //   },
-  // },
 });
 
 export default theme;
