@@ -6,6 +6,8 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
+import TUBLogo from "../../static/img/tu_logo.png";
+import UTSLogo from "../../static/img/uts_logo.jpeg";
 
 const EducationExp = () => {
   return (
@@ -37,7 +39,7 @@ const EducationExp = () => {
                 component="img"
                 sx={{ width: 315, height: 315 }}
                 alt="UTS Logo"
-                image="https://kevingu-portfolio.s3.ap-southeast-2.amazonaws.com/static/img/uts_logo.jpg"
+                image={UTSLogo}
               />
 
               <CardContent>
@@ -64,7 +66,7 @@ const EducationExp = () => {
                 component="img"
                 sx={{ width: 315, height: 315 }}
                 alt="TUB Logo"
-                image="https://kevingu-portfolio.s3.ap-southeast-2.amazonaws.com/static/img/tu_logo.png"
+                image={TUBLogo}
               />
 
               <CardContent>

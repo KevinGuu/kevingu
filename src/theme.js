@@ -8,9 +8,6 @@ const theme = createTheme({
     secondary: {
       main: "#eeeeee",
     },
-    heroButton: {
-      main: "#fafafa",
-    },
   },
 });
 

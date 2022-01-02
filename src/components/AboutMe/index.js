@@ -4,6 +4,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
+import AboutMeImage from "../../static/img/about_me.jpeg";
 
 const AboutMe = () => {
   return (
@@ -14,7 +15,7 @@ const AboutMe = () => {
             <CardMedia
               component="img"
               height="650"
-              image="https://kevingu-portfolio.s3.ap-southeast-2.amazonaws.com/static/img/about_me.jpeg"
+              image={AboutMeImage}
               alt="Just a coupla cool cats"
             />
           </Card>

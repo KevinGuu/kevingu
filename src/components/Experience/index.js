@@ -10,6 +10,10 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import React, { useState } from "react";
+import AccentureLogo from "../../static/img/accenture_logo.jpeg";
+import HuaweiLogo from "../../static/img/huawei_logo.jpeg";
+import SiemensLogo from "../../static/img/siemens_logo.png";
+import SSILogo from "../../static/img/ssi_logo.png";
 
 const Experience = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -217,7 +221,7 @@ const Experience = () => {
                   component="img"
                   sx={{ width: 50, height: 50 }}
                   alt="Accenture logo"
-                  image="https://kevingu-portfolio.s3.ap-southeast-2.amazonaws.com/static/img/accenture_logo.jpg"
+                  image={AccentureLogo}
                 />
               </ListItemIcon>
               <ListItemText
@@ -235,7 +239,7 @@ const Experience = () => {
                   component="img"
                   sx={{ width: 50, height: 50 }}
                   alt="Siemens"
-                  image="https://kevingu-portfolio.s3.ap-southeast-2.amazonaws.com/static/img/siemens_energy_logo+(1).png"
+                  image={SiemensLogo}
                 />
               </ListItemIcon>
               <ListItemText
@@ -253,7 +257,7 @@ const Experience = () => {
                   component="img"
                   sx={{ width: 50, height: 50 }}
                   alt="SSI Logo"
-                  image="https://kevingu-portfolio.s3.ap-southeast-2.amazonaws.com/static/img/ssi_logo+(1).png"
+                  image={SSILogo}
                 />
               </ListItemIcon>
               <ListItemText
@@ -270,8 +274,8 @@ const Experience = () => {
                 <CardMedia
                   component="img"
                   sx={{ width: 50, height: 50 }}
-                  alt="SSI Logo"
-                  image="https://kevingu-portfolio.s3.ap-southeast-2.amazonaws.com/static/img/huawei_logo.jpg"
+                  alt="Huawei Logo"
+                  image={HuaweiLogo}
                 />
               </ListItemIcon>
               <ListItemText primary="Huawei" secondary="Aug 2017 - Jan 2018" />
