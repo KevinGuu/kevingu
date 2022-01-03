@@ -16,6 +16,7 @@ import * as React from "react";
 const Skills = () => {
   return (
     <Container
+      name="scrollToSkills"
       sx={{
         pt: 5,
         pb: 5,

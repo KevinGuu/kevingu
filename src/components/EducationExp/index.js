@@ -12,6 +12,7 @@ import UTSLogo from "../../static/img/uts_logo.jpeg";
 const EducationExp = () => {
   return (
     <Container
+      name="scrollToEducation"
       sx={{
         pt: 5,
         pb: 5,
