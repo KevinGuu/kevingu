@@ -6,6 +6,7 @@ import * as React from "react";
 const Leadership = () => {
   return (
     <Container
+      name="scrollToLeadership"
       sx={{
         pt: 5,
         pb: 5,
