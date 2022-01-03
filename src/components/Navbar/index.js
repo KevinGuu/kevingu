@@ -1,6 +1,8 @@
+import BookIcon from "@mui/icons-material/Book";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Avatar, Button, Grid } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
@@ -13,6 +15,7 @@ import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import { scroller } from "react-scroll";
+import KGIcon from "../../static/img/kg_icon.png";
 import theme from "../../theme";
 
 const mainBurgerLinks = [
@@ -47,7 +50,7 @@ const Navbar = () => {
 
   const handleOnClickResume = () => {
     window.open(
-      "https://kevingu-portfolio.s3.ap-southeast-2.amazonaws.com/static/file/Kevin_Gu_Resume.pdf"
+      "https://s3.ap-southeast-2.amazonaws.com/www.kevinyiminggu.com/Kevin_Gu_Resume.pdf"
     );
   };
 
@@ -121,123 +124,116 @@ const Navbar = () => {
       <AppBar>
         <Container maxWidth="false">
           <Toolbar disableGutters variant="dense">
-            {/* md screen title */}
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
-            >
-              Kevin Gu
-            </Typography>
-
-            {/* xs screen title */}
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{
-                justifyContent: "left",
-                flexGrow: 1,
-                display: { xs: "flex", md: "none" },
-              }}
-            >
-              Kevin Gu
-            </Typography>
-
-            {/* ----- ----- ----- ----- -----  */}
-            {/* Max screen main links */}
-            {/* ----- ----- ----- ----- -----  */}
-            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-              <IconButton
-                key="linkedin"
-                onClick={handleOnClickLinkedin}
-                size="medium"
-                sx={{ my: 0, color: "white", display: "block" }}
-              >
-                <LinkedInIcon fontSize="medium"></LinkedInIcon>
-              </IconButton>
-              <IconButton
-                key="github"
-                onClick={handleOnClickGithub}
-                size="medium"
-                sx={{ my: 0, color: "white", display: "block" }}
-              >
-                <GitHubIcon fontSize="medium"></GitHubIcon>
-              </IconButton>
-              <IconButton
-                onClick={handleOnClickResume}
-                key="resume"
-                size="large"
-                sx={{
-                  color: "white",
-                  display: { xs: "none", md: "flex" },
-                }}
-              >
-                <Typography variant="h6">Resume</Typography>
-              </IconButton>
-            </Box>
-
-            {/* ----- ----- ----- ----- -----  */}
-            {/* Burger */}
-            {/* ----- ----- ----- ----- -----  */}
-            <Box sx={{ flexGrow: 0 }}>
-              <Tooltip title="Open Navigations">
-                <IconButton
-                  onClick={handleOpenBurger}
-                  sx={{ p: 0 }}
-                  color="inherit"
-                  aria-controls="menu-appbar"
-                  aria-haspopup="true"
-                >
-                  <MenuIcon />
-                </IconButton>
-              </Tooltip>
-              <Menu
-                sx={{ mt: "50px" }}
-                id="menu-appbar"
-                anchorEl={anchorElBurger}
-                anchorOrigin={{
-                  vertical: "top",
-                  horizontal: "right",
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "right",
-                }}
-                open={Boolean(anchorElBurger)}
-                onClose={handleCloseBurger}
-              >
-                {mainBurgerLinks.map((mainBurgerLink) => (
-                  <MenuItem
-                    key={mainBurgerLink}
-                    onClick={handleOnClickMenuLinks(mainBurgerLink)}
-                  >
-                    <Typography textAlign="center">{mainBurgerLink}</Typography>
-                  </MenuItem>
-                ))}
-                {/* SOCIALS */}
-                <MenuItem onClick={handleOnClickMenuLinks("Linkedin")}>
-                  <Typography>Linkedin</Typography>
+            <Grid container justify="space-between" alignItems="center">
+              <Grid item name="gridItemIcon">
+                <Button
+                  size="medium"
+                  startIcon={
+                    <Avatar
+                      variant="rounded"
+                      src={KGIcon}
+                      sx={{ width: 30, height: 30, mr: 1 }}
+                    />
+                  }
+                  onClick={handleOnClickMenuLinks("Home")}
+                />
+              </Grid>
+              <Grid item name="gridItemSocials">
+                <Box sx={{ display: { xs: "none", md: "flex" } }}>
                   <IconButton
                     key="linkedin"
-                    size="small"
-                    sx={{ color: "inherit" }}
+                    onClick={handleOnClickLinkedin}
+                    size="medium"
+                    edge="start"
+                    sx={{ color: "white" }}
                   >
                     <LinkedInIcon fontSize="medium"></LinkedInIcon>
                   </IconButton>
-                </MenuItem>
-                <MenuItem onClick={handleOnClickMenuLinks("GitHub")}>
-                  <Typography textAlign="center">GitHub</Typography>
                   <IconButton
                     key="github"
-                    size="small"
-                    sx={{ color: "inherit" }}
+                    onClick={handleOnClickGithub}
+                    size="medium"
+                    sx={{ color: "white" }}
                   >
                     <GitHubIcon fontSize="medium"></GitHubIcon>
                   </IconButton>
-                </MenuItem>
-              </Menu>
-            </Box>
+                  <IconButton
+                    onClick={handleOnClickResume}
+                    key="resume"
+                    size="medium"
+                    sx={{
+                      color: "white",
+                    }}
+                  >
+                    <BookIcon fontSize="medium" sx={{ mr: 1 }}></BookIcon>
+                    <Typography variant="body1">Resume</Typography>
+                  </IconButton>
+                </Box>
+              </Grid>
+              <Grid item name="gridItemMenu" sx={{ marginLeft: "auto" }}>
+                <Box>
+                  <Tooltip title="Open Navigations">
+                    <IconButton
+                      onClick={handleOpenBurger}
+                      sx={{ p: 0 }}
+                      color="inherit"
+                      aria-controls="menu-appbar"
+                      aria-haspopup="true"
+                    >
+                      <MenuIcon fontSize="large" />
+                    </IconButton>
+                  </Tooltip>
+                  <Menu
+                    sx={{ mt: "50px" }}
+                    id="menu-appbar"
+                    anchorEl={anchorElBurger}
+                    anchorOrigin={{
+                      vertical: "top",
+                      horizontal: "right",
+                    }}
+                    keepMounted
+                    transformOrigin={{
+                      vertical: "top",
+                      horizontal: "right",
+                    }}
+                    open={Boolean(anchorElBurger)}
+                    onClose={handleCloseBurger}
+                  >
+                    {mainBurgerLinks.map((mainBurgerLink) => (
+                      <MenuItem
+                        key={mainBurgerLink}
+                        onClick={handleOnClickMenuLinks(mainBurgerLink)}
+                      >
+                        <Typography>{mainBurgerLink}</Typography>
+                      </MenuItem>
+                    ))}
+                    {/* SOCIALS */}
+                    <MenuItem onClick={handleOnClickMenuLinks("Linkedin")}>
+                      <Typography>Linkedin</Typography>
+                      <IconButton
+                        key="linkedin"
+                        size="small"
+                        edge="start"
+                        sx={{ color: "inherit" }}
+                      >
+                        <LinkedInIcon fontSize="small"></LinkedInIcon>
+                      </IconButton>
+                    </MenuItem>
+                    <MenuItem onClick={handleOnClickMenuLinks("GitHub")}>
+                      <Typography textAlign="center">GitHub</Typography>
+                      <IconButton
+                        key="github"
+                        size="small"
+                        edge="start"
+                        sx={{ color: "inherit" }}
+                      >
+                        <GitHubIcon fontSize="small"></GitHubIcon>
+                      </IconButton>
+                    </MenuItem>
+                  </Menu>
+                </Box>
+              </Grid>
+            </Grid>
           </Toolbar>
         </Container>
       </AppBar>
