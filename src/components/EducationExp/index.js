@@ -11,86 +11,82 @@ import UTSLogo from "../../static/img/uts_logo.jpeg";
 
 const EducationExp = () => {
   return (
-    <Paper
-      name="scrollToEducation"
-      elevation={5}
+    <Container
       sx={{
         pt: 5,
         pb: 5,
-        bgcolor: "#f5f5f5",
+        // bgcolor: "#f5f5f5",
       }}
     >
-      <Container>
-        <Typography
-          variant="h2"
-          component="div"
-          align="left"
-          sx={{
-            pb: 2,
-          }}
-        >
-          Education
-        </Typography>
+      <Typography
+        variant="h2"
+        component="div"
+        align="left"
+        sx={{
+          pb: 2,
+        }}
+      >
+        Education
+      </Typography>
 
-        <Grid container spacing={5}>
-          <Grid item md={6} sx={{ display: "flex" }}>
-            <Card>
-              <CardMedia
-                component="img"
-                sx={{ width: 315, height: 315 }}
-                alt="UTS Logo"
-                image={UTSLogo}
-              />
+      <Grid container spacing={5}>
+        <Grid item md={6} sx={{ display: "flex" }}>
+          <Card>
+            <CardMedia
+              component="img"
+              sx={{ width: 315, height: 315 }}
+              alt="UTS Logo"
+              image={UTSLogo}
+            />
 
-              <CardContent>
-                <Typography variant="h4" gutterBottom component="div">
-                  University of Technology Sydney
-                </Typography>
-                <Typography gutterBottom variant="h6" component="div">
-                  Bachelor of Engineering (Honours) Software, Diploma in
-                  Professional Engineering Practice
-                </Typography>
-                <Typography
-                  variant="body1"
-                  component="div"
-                  color="text.secondary"
-                >
-                  Sub-major in Data Analytics with a focus on Machine Learning.
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid item md={6} sx={{ display: "flex" }}>
-            <Card>
-              <CardMedia
-                component="img"
-                sx={{ width: 315, height: 315 }}
-                alt="TUB Logo"
-                image={TUBLogo}
-              />
-
-              <CardContent>
-                <Typography gutterBottom component="div" variant="h4">
-                  Technische Universität Berlin
-                </Typography>
-                <Typography gutterBottom variant="h6" component="div">
-                  Bachelor of Engineering (Honours) Software, Diploma in
-                  Professional Engineering Practice
-                </Typography>
-                <Typography
-                  variant="body1"
-                  component="div"
-                  color="text.secondary"
-                >
-                  Exchange year at TU Berlin. Participated in the exchange buddy
-                  program as well as intensive German language courses.
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
+            <CardContent>
+              <Typography variant="h4" gutterBottom component="div">
+                University of Technology Sydney
+              </Typography>
+              <Typography gutterBottom variant="h6" component="div">
+                Bachelor of Engineering (Honours) Software, Diploma in
+                Professional Engineering Practice
+              </Typography>
+              <Typography
+                variant="body1"
+                component="div"
+                color="text.secondary"
+              >
+                Sub-major in Data Analytics with a focus on Machine Learning.
+              </Typography>
+            </CardContent>
+          </Card>
         </Grid>
-      </Container>
-    </Paper>
+        <Grid item md={6} sx={{ display: "flex" }}>
+          <Card>
+            <CardMedia
+              component="img"
+              sx={{ width: 315, height: 315 }}
+              alt="TUB Logo"
+              image={TUBLogo}
+            />
+
+            <CardContent>
+              <Typography gutterBottom component="div" variant="h4">
+                Technische Universität Berlin
+              </Typography>
+              <Typography gutterBottom variant="h6" component="div">
+                Bachelor of Engineering (Honours) Software, Diploma in
+                Professional Engineering Practice
+              </Typography>
+              <Typography
+                variant="body1"
+                component="div"
+                color="text.secondary"
+              >
+                Exchange year at TU Berlin. Participated in the exchange buddy
+                program as well as intensive German language courses.
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+      </Grid>
+    </Container>
   );
 };
 

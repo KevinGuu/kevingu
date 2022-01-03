@@ -28,16 +28,18 @@ const Experience = () => {
                 Accenture
               </Typography>
               <Typography variant="subtitle1" component="div">
-                Sydney, Australia
+                DevOps & Platform Engineer - Advanced App Engineering Senior
+                Analyst
               </Typography>
               <Typography
                 variant="subtitle1"
                 component="div"
                 color="text.secondary"
+                gutterBottom
               >
-                DevOps & Platform Engineer - Advanced App Engineering Senior
-                Analyst
+                Sydney, Australia
               </Typography>
+
               <Typography variant="body1" component="div">
                 - Creating enterprise level, multi-tenant SaaS platforms using
                 AWS, Kubernetes, Docker, Cloudformation, Ansible, Python and
@@ -61,15 +63,17 @@ const Experience = () => {
               <Typography variant="h4" component="div">
                 Siemens Energy
               </Typography>
+
               <Typography variant="subtitle1" component="div">
-                Berlin, Germany
+                Data Scientist
               </Typography>
               <Typography
                 variant="subtitle1"
                 component="div"
                 color="text.secondary"
+                gutterBottom
               >
-                Data Scientist
+                Berlin, Germany
               </Typography>
               <Typography variant="body1" component="div">
                 - Forecasted various energy market metrics including power
@@ -102,15 +106,17 @@ const Experience = () => {
               <Typography variant="h4" component="div">
                 SSI Schaefer
               </Typography>
+
               <Typography variant="subtitle1" component="div">
-                Sydney, Australia
+                Software Engineer
               </Typography>
               <Typography
                 variant="subtitle1"
                 component="div"
                 color="text.secondary"
+                gutterBottom
               >
-                Software Engineer
+                Sydney, Australia
               </Typography>
               <Typography variant="body1" component="div">
                 - Owned and designed the web-based platform of the in-house
@@ -138,15 +144,17 @@ const Experience = () => {
                 <Typography variant="h4" component="div">
                   Huawei
                 </Typography>
+
                 <Typography variant="subtitle1" component="div">
-                  Sydney, Australia
+                  Software Engineer
                 </Typography>
                 <Typography
                   variant="subtitle1"
                   component="div"
                   color="text.secondary"
+                  gutterBottom
                 >
-                  Software Engineer
+                  Sydney, Australia
                 </Typography>
                 <Typography variant="body1" component="div">
                   - Automated company-wide weekly & monthly performance reports
@@ -169,17 +177,22 @@ const Experience = () => {
         return (
           <Card sx={{ display: "flex", width: "100%" }}>
             <CardContent>
-              <Typography component="div" variant="h4">
+              <Typography variant="h4" component="div">
                 Accenture
               </Typography>
-              <Typography
-                variant="subtitle1"
-                color="text.secondary"
-                component="div"
-              >
+              <Typography variant="subtitle1" component="div">
                 DevOps & Platform Engineer - Advanced App Engineering Senior
                 Analyst
               </Typography>
+              <Typography
+                variant="subtitle1"
+                component="div"
+                color="text.secondary"
+                gutterBottom
+              >
+                Sydney, Australia
+              </Typography>
+
               <Typography variant="body1" component="div">
                 - Creating enterprise level, multi-tenant SaaS platforms using
                 AWS, Kubernetes, Docker, Cloudformation, Ansible, Python and

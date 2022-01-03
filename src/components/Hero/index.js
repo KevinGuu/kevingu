@@ -5,10 +5,10 @@ import { Container, IconButton, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import HeroSlider, { MenuNav, Slide } from "hero-slider";
 import React from "react";
-import Hero1Image from "../../static/img/hero_1.JPG";
 import HeroSplashImage from "../../static/img/hero_splash.JPG";
+import Hero1Image from "../../static/img/hero_1.JPG";
 
-const hero = () => {
+const Hero = () => {
   const handleOnClickLinkedin = () => {
     window.open("https://www.linkedin.com/in/kevinyiminggu/");
   };
@@ -26,8 +26,8 @@ const hero = () => {
   return (
     <Container name="scrollToHero" disableGutters maxWidth="false">
       <HeroSlider
-        slidingAnimation="top_to_bottom"
-        orientation="vertical"
+        slidingAnimation="fade"
+        orientation="horizontal"
         initialSlide={1}
         style={{
           backgroundColor: "#000",
@@ -45,30 +45,29 @@ const hero = () => {
           // shouldRenderMask
           navDescription="DevOps Engineer"
           background={{
-            backgroundColor: "#6D9B98",
+            backgroundPosition: "center top",
             backgroundImage: HeroSplashImage,
           }}
         >
-          <Container>
+          <Box
+            name="boxMD"
+            sx={{
+              position: "absolute",
+              left: "25%",
+              top: "45%",
+              display: { xs: "none", md: "block" },
+            }}
+          >
             <Typography
-              variant="h2"
+              variant="h1"
               color="white"
               sx={{
                 fontWeight: "bold",
-                display: { xs: "none", md: "flex" },
-                pt: 70,
               }}
             >
               Kevin Gu
             </Typography>
-            <Typography
-              variant="h3"
-              color="white"
-              Wrap
-              sx={{
-                display: { xs: "none", md: "flex" },
-              }}
-            >
+            <Typography variant="h2" color="white">
               DevOps Engineer
             </Typography>
             <Box
@@ -84,7 +83,6 @@ const hero = () => {
                 edge="start"
                 sx={{
                   color: "white",
-                  display: { xs: "none", md: "flex" },
                 }}
               >
                 <LinkedInIcon fontSize="large"></LinkedInIcon>
@@ -95,7 +93,6 @@ const hero = () => {
                 size="large"
                 sx={{
                   color: "white",
-                  display: { xs: "none", md: "flex" },
                 }}
               >
                 <GitHubIcon fontSize="large"></GitHubIcon>
@@ -106,47 +103,94 @@ const hero = () => {
                 size="large"
                 sx={{
                   color: "white",
-                  display: { xs: "none", md: "flex" },
                 }}
               >
                 <BookIcon fontSize="large"></BookIcon>
-                <Typography variant="h5" sx={{ pl: 1.5 }}>
+                <Typography variant="h6" sx={{ pl: 1.5 }}>
                   Download Resume
                 </Typography>
               </IconButton>
             </Box>
-          </Container>
+          </Box>
+          <Box
+            name="boxXs"
+            sx={{
+              position: "absolute",
+              left: "5%",
+              top: "45%",
+              display: { xs: "block", md: "none" },
+            }}
+          >
+            <Typography
+              variant="h3"
+              color="white"
+              sx={{
+                fontWeight: "bold",
+              }}
+            >
+              Kevin Gu
+            </Typography>
+            <Typography variant="h4" color="white">
+              DevOps Engineer
+            </Typography>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+              }}
+            >
+              <IconButton
+                onClick={handleOnClickLinkedin}
+                key="linkedin"
+                size="medium"
+                edge="start"
+                sx={{
+                  color: "white",
+                }}
+              >
+                <LinkedInIcon fontSize="medium"></LinkedInIcon>
+              </IconButton>
+              <IconButton
+                onClick={handleOnClickGithub}
+                key="github"
+                size="medium"
+                sx={{
+                  color: "white",
+                }}
+              >
+                <GitHubIcon fontSize="medium"></GitHubIcon>
+              </IconButton>
+            </Box>
+          </Box>
         </Slide>
 
         <Slide
-          // shouldRenderMask
           navDescription="Software Developer"
           background={{
             backgroundColor: "#8A8A8A",
             backgroundImage: Hero1Image,
           }}
         >
-          <Container>
+          <Box
+            name="boxMD"
+            sx={{
+              position: "absolute",
+              left: "25%",
+              top: "45%",
+              display: { xs: "none", md: "block" },
+            }}
+          >
             <Typography
-              variant="h2"
+              variant="h1"
               color="white"
               sx={{
                 fontWeight: "bold",
-                display: { xs: "none", md: "flex" },
-                pt: 70,
               }}
             >
               Kevin Gu
             </Typography>
-            <Typography
-              variant="h3"
-              color="white"
-              Wrap
-              sx={{
-                display: { xs: "none", md: "flex" },
-              }}
-            >
-              Software Developer
+            <Typography variant="h2" color="white">
+              Software Engineer
             </Typography>
             <Box
               sx={{
@@ -161,7 +205,6 @@ const hero = () => {
                 edge="start"
                 sx={{
                   color: "white",
-                  display: { xs: "none", md: "flex" },
                 }}
               >
                 <LinkedInIcon fontSize="large"></LinkedInIcon>
@@ -172,7 +215,6 @@ const hero = () => {
                 size="large"
                 sx={{
                   color: "white",
-                  display: { xs: "none", md: "flex" },
                 }}
               >
                 <GitHubIcon fontSize="large"></GitHubIcon>
@@ -183,22 +225,70 @@ const hero = () => {
                 size="large"
                 sx={{
                   color: "white",
-                  display: { xs: "none", md: "flex" },
                 }}
               >
                 <BookIcon fontSize="large"></BookIcon>
-                <Typography variant="h5" sx={{ pl: 1.5 }}>
+                <Typography variant="h6" sx={{ pl: 1.5 }}>
                   Download Resume
                 </Typography>
               </IconButton>
             </Box>
-          </Container>
+          </Box>
+          <Box
+            name="boxXs"
+            sx={{
+              position: "absolute",
+              left: "5%",
+              top: "45%",
+              display: { xs: "block", md: "none" },
+            }}
+          >
+            <Typography
+              variant="h3"
+              color="white"
+              sx={{
+                fontWeight: "bold",
+              }}
+            >
+              Kevin Gu
+            </Typography>
+            <Typography variant="h4" color="white">
+              Software Engineer
+            </Typography>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+              }}
+            >
+              <IconButton
+                onClick={handleOnClickLinkedin}
+                key="linkedin"
+                size="medium"
+                edge="start"
+                sx={{
+                  color: "white",
+                }}
+              >
+                <LinkedInIcon fontSize="medium"></LinkedInIcon>
+              </IconButton>
+              <IconButton
+                onClick={handleOnClickGithub}
+                key="github"
+                size="medium"
+                sx={{
+                  color: "white",
+                }}
+              >
+                <GitHubIcon fontSize="medium"></GitHubIcon>
+              </IconButton>
+            </Box>
+          </Box>
         </Slide>
-
         <MenuNav />
       </HeroSlider>
     </Container>
   );
 };
 
-export default hero;
+export default Hero;

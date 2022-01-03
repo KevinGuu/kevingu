@@ -6,6 +6,7 @@ import Leadership from "./components/Leadership";
 import Navbar from "./components/Navbar";
 import Research from "./components/Research";
 import Skills from "./components/Skills";
+import FooterNav from "./components/FooterNav";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <EducationExp />
       <Research />
       <Leadership />
+      <FooterNav />
     </div>
   );
 }
