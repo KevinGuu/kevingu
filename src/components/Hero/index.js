@@ -5,8 +5,8 @@ import { Container, IconButton, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import HeroSlider, { MenuNav, Slide } from "hero-slider";
 import React from "react";
-import HeroSplashImage from "../../static/img/hero_splash.JPG";
 import Hero1Image from "../../static/img/hero_1.JPG";
+import HeroSplashImage from "../../static/img/hero_splash.JPG";
 
 const Hero = () => {
   const handleOnClickLinkedin = () => {
