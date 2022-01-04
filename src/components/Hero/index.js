@@ -19,7 +19,7 @@ const Hero = () => {
 
   const handleOnClickResume = () => {
     window.open(
-      "https://kevingu-portfolio.s3.ap-southeast-2.amazonaws.com/static/file/Kevin_Gu_Resume.pdf"
+      "https://s3.ap-southeast-2.amazonaws.com/www.kevinyiminggu.com/Kevin_Gu_Resume.pdf"
     );
   };
 
@@ -60,14 +60,14 @@ const Hero = () => {
           >
             <Typography
               variant="h1"
-              color="white"
+              color="text.primary"
               sx={{
                 fontWeight: "bold",
               }}
             >
               Kevin Gu
             </Typography>
-            <Typography variant="h2" color="white">
+            <Typography variant="h2" color="text.primary">
               DevOps Engineer
             </Typography>
             <Box

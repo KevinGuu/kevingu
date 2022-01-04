@@ -12,26 +12,28 @@ const EducationExp = () => {
   return (
     <Container
       name="scrollToEducation"
+      align="center"
       sx={{
-        pt: 5,
-        pb: 5,
-        // bgcolor: "#f5f5f5",
+        pt: 10,
+        pb: 10,
       }}
     >
-      <Typography
-        variant="h2"
-        component="div"
-        align="left"
-        sx={{
-          pb: 2,
-        }}
-      >
-        Education
-      </Typography>
+      <Grid container direction="row" maxWidth="lg" spacing={3}>
+        <Grid item xs={10}>
+          <Typography
+            variant="h2"
+            component="div"
+            align="left"
+            sx={{
+              color: "text.primary",
+            }}
+          >
+            Education
+          </Typography>
+        </Grid>
 
-      <Grid container spacing={5}>
         <Grid item md={6} sx={{ display: "flex" }}>
-          <Card>
+          <Card elevation={7} sx={{ pt: 5, bgcolor: "primary.main" }}>
             <CardMedia
               component="img"
               sx={{ width: 315, height: 315 }}
@@ -47,18 +49,14 @@ const EducationExp = () => {
                 Bachelor of Engineering (Honours) Software, Diploma in
                 Professional Engineering Practice
               </Typography>
-              <Typography
-                variant="body1"
-                component="div"
-                color="text.secondary"
-              >
+              <Typography variant="body1" component="div">
                 Sub-major in Data Analytics with a focus on Machine Learning.
               </Typography>
             </CardContent>
           </Card>
         </Grid>
         <Grid item md={6} sx={{ display: "flex" }}>
-          <Card>
+          <Card elevation={7} sx={{ pt: 5, bgcolor: "primary.main" }}>
             <CardMedia
               component="img"
               sx={{ width: 315, height: 315 }}
@@ -74,11 +72,7 @@ const EducationExp = () => {
                 Bachelor of Engineering (Honours) Software, Diploma in
                 Professional Engineering Practice
               </Typography>
-              <Typography
-                variant="body1"
-                component="div"
-                color="text.secondary"
-              >
+              <Typography variant="body1" component="div">
                 Exchange year at TU Berlin. Participated in the exchange buddy
                 program as well as intensive German language courses.
               </Typography>

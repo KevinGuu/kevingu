@@ -16,42 +16,58 @@ const Skills = () => {
   return (
     <Container
       name="scrollToSkills"
+      align="center"
       sx={{
-        pt: 5,
-        pb: 5,
+        pt: 10,
+        pb: 10,
       }}
     >
-      <Typography
-        variant="h2"
-        component="div"
-        align="left"
-        sx={{
-          pt: 2,
-          pb: 2,
-        }}
-      >
-        Skills
-      </Typography>
-      <Grid container spacing={2}>
+      <Grid container direction="row" maxWidth="lg" spacing={3}>
+        <Grid item xs={10}>
+          <Typography
+            variant="h2"
+            component="div"
+            align="left"
+            sx={{
+              color: "text.primary",
+            }}
+          >
+            Skills
+          </Typography>
+        </Grid>
         <Grid item md={4} sx={{ display: "flex" }}>
-          <Card sx={{ maxWidth: 355 }}>
+          <Card
+            elevation={7}
+            sx={{
+              maxWidth: 355,
+              bgcolor: "primary.dark",
+            }}
+          >
             <CardHeader
               avatar={
                 <IntegrationInstructionsOutlinedIcon></IntegrationInstructionsOutlinedIcon>
               }
-              title=" DevOps & Platform"
+              title=" DevOps"
+              titleTypographyProps={{ variant: "h6", align: "left" }}
             />
             <CardContent>
-              <Typography variant="body1" sx={{ pb: 1 }}>
+              <Typography
+                variant="body1"
+                align="left"
+                gutterBottom
+                sx={{ color: "text.primary" }}
+              >
                 Industry trained DevOps engineer familiar with the following
                 technologies.
               </Typography>
-              <Typography variant="body1">
-                {" "}
+              <Typography variant="body1" align="left">
                 - AWS | Docker | Kubernetes | Jenkins | Azure DevOps
               </Typography>
-              <Typography variant="body1"> - Git | Linux</Typography>
-              <Typography variant="body1">
+              <Typography variant="body1" align="left">
+                {" "}
+                - Git | Linux
+              </Typography>
+              <Typography variant="body1" align="left">
                 {" "}
                 - Cloudformation | Ansible
               </Typography>
@@ -59,103 +75,161 @@ const Skills = () => {
           </Card>
         </Grid>
         <Grid item md={4} sx={{ display: "flex" }}>
-          <Card sx={{ maxWidth: 355 }}>
+          <Card
+            elevation={7}
+            sx={{
+              maxWidth: 355,
+              bgcolor: "primary.dark",
+            }}
+          >
             <CardHeader
               avatar={<CodeOutlinedIcon></CodeOutlinedIcon>}
-              title="Programming & Scripting"
+              title="Programming"
+              titleTypographyProps={{ variant: "h6", align: "left" }}
             />
 
             <CardContent>
-              <Typography variant="body1" sx={{ pb: 1 }}>
+              <Typography variant="body1" align="left" gutterBottom>
                 Experienced software developer skillled in the following
                 languages.
               </Typography>
-              <Typography variant="body1"> - Python</Typography>
-              <Typography variant="body1"> - Java</Typography>
-              <Typography variant="body1"> - JavaScript | React</Typography>
-              <Typography variant="body1"> - Shell | Bash</Typography>
+              <Typography variant="body1" align="left">
+                - Python
+              </Typography>
+              <Typography variant="body1" align="left">
+                - Java
+              </Typography>
+              <Typography variant="body1" align="left">
+                - JavaScript | React
+              </Typography>
+              <Typography variant="body1" align="left">
+                - Shell | Bash
+              </Typography>
             </CardContent>
           </Card>
         </Grid>
         <Grid item md={4} sx={{ display: "flex" }}>
-          <Card sx={{ maxWidth: 355 }}>
+          <Card
+            elevation={7}
+            sx={{
+              maxWidth: 355,
+              bgcolor: "primary.dark",
+            }}
+          >
             <CardHeader
               avatar={<MonitorHeartOutlinedIcon></MonitorHeartOutlinedIcon>}
               title="Monitoring & Analytics"
+              titleTypographyProps={{ variant: "h6", align: "left" }}
             />
 
             <CardContent>
-              <Typography variant="body1" sx={{ pb: 1 }}>
+              <Typography variant="body1" align="left" gutterBottom>
                 Familiar with the following business analytics & data analytics
                 tools.
               </Typography>
-              <Typography variant="body1"> - SQL</Typography>
-              <Typography variant="body1"> - PowerBI</Typography>
-              <Typography variant="body1"> - ELK Stack</Typography>
+              <Typography variant="body1" align="left">
+                - SQL
+              </Typography>
+              <Typography variant="body1" align="left">
+                - PowerBI
+              </Typography>
+              <Typography variant="body1" align="left">
+                - ELK Stack
+              </Typography>
             </CardContent>
           </Card>
         </Grid>
         <Grid item md={4} sx={{ display: "flex" }}>
-          <Card sx={{ maxWidth: 355 }}>
+          <Card
+            elevation={7}
+            sx={{
+              maxWidth: 355,
+              bgcolor: "primary.dark",
+            }}
+          >
             <CardHeader
               avatar={<AccountTreeOutlinedIcon></AccountTreeOutlinedIcon>}
               title="Tools & Framework"
+              titleTypographyProps={{ variant: "h6", align: "left" }}
             />
 
             <CardContent>
-              <Typography variant="body1" sx={{ pb: 1 }}>
+              <Typography variant="body1" align="left" gutterBottom>
                 Certified Scaled Agile Framework (SAFe) practitioner well versed
                 in software development methodologies and best practices.
               </Typography>
-              <Typography variant="body1"> - CI/CD</Typography>
-              <Typography variant="body1"> - SAFe | Agile</Typography>
-              <Typography variant="body1"> - Jira | Confluence</Typography>
+              <Typography variant="body1" align="left">
+                - CI/CD
+              </Typography>
+              <Typography variant="body1" align="left">
+                - SAFe | Agile
+              </Typography>
+              <Typography variant="body1" align="left">
+                - Jira | Confluence
+              </Typography>
             </CardContent>
           </Card>
         </Grid>
         <Grid item md={4} sx={{ display: "flex" }}>
-          <Card sx={{ maxWidth: 355 }}>
+          <Card
+            elevation={7}
+            sx={{
+              maxWidth: 355,
+              bgcolor: "primary.dark",
+            }}
+          >
             <CardHeader
               avatar={<LanguageOutlinedIcon></LanguageOutlinedIcon>}
               title="Trilingual"
+              titleTypographyProps={{ variant: "h6", align: "left" }}
             />
 
             <CardContent>
-              <Typography variant="body1" sx={{ pb: 1 }}>
+              <Typography variant="body1" align="left" gutterBottom>
                 Lover of language fluent in two languages and actively learning
                 two more!
               </Typography>
-              <Typography variant="body1">- Native English speaker</Typography>
-              <Typography variant="body1">- Native Chinese Speaker</Typography>
-              <Typography variant="body1">
-                {" "}
+              <Typography variant="body1" align="left">
+                - Native English speaker
+              </Typography>
+              <Typography variant="body1" align="left">
+                - Native Chinese Speaker
+              </Typography>
+              <Typography variant="body1" align="left">
                 - B2 Certified German Speaker
               </Typography>
-              <Typography variant="body1"> - Learning Russian!</Typography>
+              <Typography variant="body1" align="left">
+                - Learning Russian!
+              </Typography>
             </CardContent>
           </Card>
         </Grid>
         <Grid item md={4} sx={{ display: "flex" }}>
-          <Card sx={{ maxWidth: 355 }}>
+          <Card
+            elevation={7}
+            sx={{
+              maxWidth: 355,
+              bgcolor: "primary.dark",
+            }}
+          >
             <CardHeader
               avatar={<SchoolOutlinedIcon></SchoolOutlinedIcon>}
               title="Certifications"
+              titleTypographyProps={{ variant: "h6", align: "left" }}
             />
 
             <CardContent>
-              <Typography variant="body1" sx={{ pb: 1 }}>
+              <Typography variant="body1" align="left" gutterBottom>
                 Life long learner actively pursuing industry recognised
                 certifications.
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body1" align="left">
                 - Certified SAFe® 5 Practitioner
               </Typography>
-              <Typography variant="body1">
-                {" "}
+              <Typography variant="body1" align="left">
                 - AWS Certified Solutions Architect - Associate (pursuing)
               </Typography>
-              <Typography variant="body1">
-                {" "}
+              <Typography variant="body1" align="left">
                 - Certified Kubernetes Admin (pursuing)
               </Typography>
             </CardContent>

@@ -1,8 +1,7 @@
 import BookIcon from "@mui/icons-material/Book";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { Container, IconButton, Paper, Typography } from "@mui/material";
-import Box from "@mui/material/Box";
+import { Container, IconButton, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import * as React from "react";
 
@@ -21,68 +20,61 @@ const FooterNav = () => {
     );
   };
   return (
-    <Paper
+    <Container
       elevation={5}
+      align="center"
       sx={{
-        pt: 3,
-        pb: 3,
-        bgcolor: "#f5f5f5",
+        pt: 5,
+        pb: 5,
+        bgcolor: "primary.dark",
       }}
     >
-      <Container>
-        <Grid container justifyContent="center" alignItems="center">
-          <Grid container justifyContent="center">
-            <Typography
-              variant="h7"
-              sx={{
-                fontWeight: "bold",
-              }}
-            >
-              Kevin Gu 2021
-            </Typography>
-          </Grid>
-          <Grid container justifyContent="center">
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-              }}
-            >
-              <IconButton
-                onClick={handleOnClickLinkedin}
-                key="linkedin"
-                size="medium"
-                sx={{
-                  color: "black",
-                }}
-              >
-                <LinkedInIcon fontSize="medium"></LinkedInIcon>
-              </IconButton>
-              <IconButton
-                onClick={handleOnClickGithub}
-                key="github"
-                size="medium"
-                sx={{
-                  color: "black",
-                }}
-              >
-                <GitHubIcon fontSize="medium"></GitHubIcon>
-              </IconButton>
-              <IconButton
-                onClick={handleOnClickResume}
-                key="resume"
-                size="medium"
-                sx={{
-                  color: "black",
-                }}
-              >
-                <BookIcon fontSize="medium"></BookIcon>
-              </IconButton>
-            </Box>
-          </Grid>
+      <Grid container direction="row" justifyContent="center">
+        <Grid item xs={10}>
+          <Typography
+            variant="body1"
+            sx={{
+              fontWeight: "bold",
+              color: "text.primary",
+            }}
+          >
+            Kevin Gu 2021
+          </Typography>
         </Grid>
-      </Container>
-    </Paper>
+        <Grid container xs={10} justifyContent="center">
+          <IconButton
+            onClick={handleOnClickLinkedin}
+            key="linkedin"
+            size="medium"
+            sx={{
+              color: "text.primary",
+            }}
+          >
+            <LinkedInIcon fontSize="medium"></LinkedInIcon>
+          </IconButton>
+          <IconButton
+            onClick={handleOnClickGithub}
+            key="github"
+            size="medium"
+            sx={{
+              color: "text.primary",
+            }}
+          >
+            <GitHubIcon fontSize="medium"></GitHubIcon>
+          </IconButton>
+          <IconButton
+            onClick={handleOnClickResume}
+            key="resume"
+            size="medium"
+            sx={{
+              color: "text.primary",
+            }}
+          >
+            <BookIcon fontSize="medium"></BookIcon>
+          </IconButton>
+        </Grid>
+      </Grid>
+    </Container>
   );
 };
 
