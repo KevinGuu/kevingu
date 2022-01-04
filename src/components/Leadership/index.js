@@ -32,12 +32,12 @@ const Leadership = () => {
             align="left"
             sx={{ color: "text.primary" }}
           >
-            This research project is ongoing. It aims to investigate if hard
-            Kubernetes multi-tenancy can be established using pod level IPTable
-            rules, and if so, the rest of the project will be devoted to
-            examining the level of efficacy and performance of this
-            implementation compared to using a CNI plugin in addition to
-            Kubernetes Networkpolicy.
+            I am currently leading the effort of migrating our team's CI/CD
+            platform from Jenkins to Azure DevOps. I have taken majority
+            ownership of the migration process and have personally scoped out
+            the requirements, pain points and gotchas. I created a
+            proof-of-concept deployment pipeline and refactored a few essential
+            deployment scripts in the process.
           </Typography>
         </Grid>
       </Grid>
