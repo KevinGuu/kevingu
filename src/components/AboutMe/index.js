@@ -78,6 +78,18 @@ const AboutMe = () => {
             involved in data science and analytics throughout my previous roles
             at Siemens Energy, SSI Schaefer and Huawei.
           </Typography>
+          <Typography
+            variant="body1"
+            align="left"
+            component="div"
+            gutterBotom
+            sx={{ color: "text.primary", pt: 1.5 }}
+          >
+            My career goal for the next five years is to hone my DevOps craft
+            while sharpening my dev skills, become a leader in my field and help
+            mentor the next generation of software engineers to find their
+            passion and become future industry disrupters.
+          </Typography>
           <Box
             sx={{
               display: "flex",

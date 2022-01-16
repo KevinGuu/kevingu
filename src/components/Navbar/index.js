@@ -24,6 +24,7 @@ const mainBurgerLinks = [
   "Education",
   "Research",
   "Leadership",
+  "Teamwork",
   "Resume",
 ];
 
@@ -100,6 +101,13 @@ const Navbar = () => {
         break;
       case "Leadership":
         scroller.scrollTo("scrollToLeadership", {
+          duration: 700,
+          delay: 100,
+          smooth: true,
+        });
+        break;
+      case "Teamwork":
+        scroller.scrollTo("scrollToTeamwork", {
           duration: 700,
           delay: 100,
           smooth: true,

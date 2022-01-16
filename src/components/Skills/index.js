@@ -227,7 +227,7 @@ const Skills = () => {
                 - Certified SAFe® 5 Practitioner
               </Typography>
               <Typography variant="body1" align="left">
-                - AWS Certified Solutions Architect - Associate (pursuing)
+                - AWS Certified Solutions Architect - Associate
               </Typography>
               <Typography variant="body1" align="left">
                 - Certified Kubernetes Admin (pursuing)

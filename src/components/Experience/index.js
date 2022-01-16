@@ -34,7 +34,7 @@ const Experience = () => {
               <Typography variant="h4" component="div" align="left">
                 Accenture
               </Typography>
-              <Divider></Divider>
+              {/* <Divider variant="fullWidth" light></Divider> */}
               <Typography variant="subtitle1" component="div" align="left">
                 DevOps & Platform Engineer - Advanced App Engineering Senior
                 Analyst
@@ -216,7 +216,7 @@ const Experience = () => {
               <Typography variant="h4" component="div" align="left">
                 Accenture
               </Typography>
-              <Divider></Divider>
+              {/* <Divider></Divider> */}
               <Typography variant="subtitle1" component="div" align="left">
                 DevOps & Platform Engineer - Advanced App Engineering Senior
                 Analyst

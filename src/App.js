@@ -8,6 +8,7 @@ import Leadership from "./components/Leadership";
 import Navbar from "./components/Navbar";
 import Research from "./components/Research";
 import Skills from "./components/Skills";
+import Teamwork from "./components/Teamwork";
 import theme from "./theme";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <EducationExp />
         <Research />
         <Leadership />
+        <Teamwork />
         <FooterNav />
       </div>
     </ThemeProvider>

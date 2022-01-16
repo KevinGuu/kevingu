@@ -70,12 +70,7 @@ const Hero = () => {
             <Typography variant="h2" color="text.primary">
               DevOps Engineer
             </Typography>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-              }}
-            >
+            <Box>
               <IconButton
                 onClick={handleOnClickLinkedin}
                 key="linkedin"
@@ -130,22 +125,18 @@ const Hero = () => {
             >
               Kevin Gu
             </Typography>
-            <Typography variant="h4" color="white">
+            <Typography variant="h4" color="white" sx={{ pl: 0 }}>
               DevOps Engineer
             </Typography>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-              }}
-            >
+            <Box>
               <IconButton
                 onClick={handleOnClickLinkedin}
                 key="linkedin"
                 size="medium"
-                edge="start"
+                // edge="start"
                 sx={{
                   color: "white",
+                  pl: 0,
                 }}
               >
                 <LinkedInIcon fontSize="medium"></LinkedInIcon>
@@ -192,12 +183,7 @@ const Hero = () => {
             <Typography variant="h2" color="white">
               Software Engineer
             </Typography>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-              }}
-            >
+            <Box>
               <IconButton
                 onClick={handleOnClickLinkedin}
                 key="linkedin"
@@ -255,19 +241,15 @@ const Hero = () => {
             <Typography variant="h4" color="white">
               Software Engineer
             </Typography>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-              }}
-            >
+            <Box>
               <IconButton
                 onClick={handleOnClickLinkedin}
                 key="linkedin"
                 size="medium"
-                edge="start"
+                // edge="start"
                 sx={{
                   color: "white",
+                  pl: 0,
                 }}
               >
                 <LinkedInIcon fontSize="medium"></LinkedInIcon>

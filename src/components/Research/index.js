@@ -65,11 +65,25 @@ const Research = () => {
             align="left"
             sx={{ color: "text.primary" }}
           >
-            This research project is ongoing. It aims to investigate if hard
-            Kubernetes multi-tenancy can be established using pod level IPTable
-            rules, and if so, the rest of the project will be devoted to
-            examining the level of efficacy and performance of this
-            implementation compared to using a CNI plugin in addition to
+            This is an ongoing research project.
+          </Typography>
+          <Typography
+            variant="body1"
+            component="div"
+            align="left"
+            sx={{ color: "text.primary" }}
+          >
+            Kubernetes is an open-source container orchestration system for
+            automating software deployment, scaling, and management. By default,
+            pods within Kubernetes are isolated for neither ingress nor egress.
+            Multitenant applications that are hosted within the same underlying
+            Kubernetes cluster will therefore have to implement network
+            isolation in order to prevent malicious access attempts from each
+            other. The goal of this project is to investigate the efficacy of
+            implementing hard Kubernetes multi-tenancy by modifying pod level
+            IPTable rules. The project will aim to examine the performance of
+            this approach compared to a more established approach, which
+            achieves network isolation by deploying a CNI plugin in addition to
             Kubernetes Networkpolicy.
           </Typography>
         </Grid>
